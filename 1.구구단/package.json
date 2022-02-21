@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack"
   },
-  "author": "ZeroCho",
+  "author": "jm",
   "license": "MIT",
   "dependencies": {
     "react": "^17.0.1",
