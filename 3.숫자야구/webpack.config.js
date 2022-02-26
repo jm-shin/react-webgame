@@ -2,15 +2,15 @@ const path = require('path');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
-    name: 'word-relay-dev',
+    name: 'number-baseball-dev',
     mode: 'development',
     devtool: 'inline-source-map',
     resolve: {
         extensions: ['.js', '.jsx'],
     },
     entry: {
-        app: ['./client'],
-    },//입력
+        app: './client',
+    },
     module: {
         rules: [{
             test: /\.jsx?$/,
@@ -35,7 +35,7 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js',
         publicPath: '/dist',
-    },//출력
+    },
     devServer: {
         devMiddleware: { publicPath: '/dist' },
         static: { directory: path.resolve(__dirname) },
